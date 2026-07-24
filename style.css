@@ -464,31 +464,48 @@ footer{
         CELULARES
 ==============================*/
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     header{
-        flex-direction:column;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
         align-items:center;
+        padding:10px 15px;
+    }
+
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .logo h1{
+        font-size:22px;
     }
 
     .menu{
-        flex-direction:column;
-        width:100%;
-        text-align:center;
-    }
-
-    .menu>li{
-        width:100%;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-end;
+        align-items:center;
+        gap:8px;
+        width:auto;
     }
 
     .menu>li>a{
-        padding:15px;
+        padding:8px 10px;
+        font-size:14px;
     }
 
     .submenu{
-        position:static;
-        width:100%;
-        box-shadow:none;
+        position:absolute;
+        width:220px;
     }
 
     .banner{

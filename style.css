@@ -25,6 +25,19 @@ header{
     box-shadow:0 5px 12px rgba(0,0,0,.30);
 }
 
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+
+
 .logo{
     display:flex;
     align-items:center;
@@ -464,60 +477,90 @@ footer{
         CELULARES
 ==============================*/
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-    header{
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        padding:10px 15px;
-    }
+header{
 
-    .logo{
-        display:flex;
-        align-items:center;
-        gap:10px;
-    }
+    padding:10px 20px;
 
-    .logo img{
-        width:45px;
-        height:45px;
-    }
+}
 
-    .logo h1{
-        font-size:22px;
-    }
+.menu-toggle{
 
-    .menu{
-        display:flex;
-        flex-direction:row;
-        justify-content:flex-end;
-        align-items:center;
-        gap:8px;
-        width:auto;
-    }
+    display:block;
 
-    .menu>li>a{
-        padding:8px 10px;
-        font-size:14px;
-    }
+}
 
-    .submenu{
-        position:absolute;
-        width:220px;
-    }
+nav{
 
-    .banner{
-        height:220px;
-    }
+    position:absolute;
+    top:75px;
+    left:0;
+    width:100%;
+    background:#331010;
 
-    .grid{
-        grid-template-columns:1fr;
-    }
+    display:none;
 
-    .card img{
-        height:230px;
-    }
+}
+
+nav.active{
+
+    display:block;
+
+}
+
+.menu{
+
+    flex-direction:column;
+    width:100%;
+
+}
+
+.menu li{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.menu li a{
+
+    display:block;
+    padding:18px;
+
+}
+
+.submenu{
+
+    position:static;
+    width:100%;
+    box-shadow:none;
+
+}
+
+.logo img{
+
+    width:50px;
+    height:50px;
+
+}
+
+.logo h1{
+
+    font-size:24px;
+
+}
+
+.banner{
+
+    height:240px;
+
+}
+
+.grid{
+
+    grid-template-columns:1fr;
+
+}
 
 }

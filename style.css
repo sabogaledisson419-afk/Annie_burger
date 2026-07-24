@@ -421,7 +421,89 @@ footer{
     display:block;
 }
 
+/*=================================
+        MENÚ DIGITAL
+==================================*/
 
+.qr-section{
+
+    background:#fff;
+    padding:35px 25px;
+
+}
+
+.qr-contenedor{
+
+    max-width:1000px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+
+}
+
+.qr-texto{
+
+    flex:1;
+    text-align:left;
+
+}
+
+.qr-texto h2{
+
+    color:#331010;
+    font-size:34px;
+    margin-bottom:15px;
+
+}
+
+.qr-texto p{
+
+    font-size:18px;
+    color:#555;
+    line-height:1.7;
+
+}
+
+.qr-imagen{
+
+    width:180px;
+
+}
+
+.qr-imagen img{
+
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.btn-menu{
+
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+
+    background:#C62828;
+    color:white;
+
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-menu:hover{
+
+    background:#331010;
+    transform:translateY(-3px);
+
+}
 
 
 
@@ -529,6 +611,37 @@ nav{
 
 .card img{
     height:220px;
+}
+
+.qr-contenedor{
+
+    flex-direction:column-reverse;
+    text-align:center;
+
+}
+
+.qr-texto{
+
+    text-align:center;
+
+}
+
+.qr-texto h2{
+
+    font-size:28px;
+
+}
+
+.qr-texto p{
+
+    font-size:16px;
+
+}
+
+.qr-imagen{
+
+    width:150px;
+
 }
 
 }

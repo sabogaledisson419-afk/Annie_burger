@@ -421,92 +421,60 @@ footer{
     display:block;
 }
 
-/*=================================
-        MENÚ DIGITAL
-==================================*/
+/*=========================
+    BOTÓN MENÚ FLOTANTE
+=========================*/
 
-.qr-section{
-
-    background:#fff;
-    padding:35px 25px;
-
-}
-
-.qr-contenedor{
-
-    max-width:1000px;
-    margin:auto;
-
+.menu-float{
+    position:fixed;
+    right:20px;
+    bottom:160px;
+    width:80px;
+    height:80px;
+    background:linear-gradient(135deg,#C62828,#8E0000);
+    border:3px solid #FFD54F;
+    border-radius:20px;
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
-    gap:50px;
-
-}
-
-.qr-texto{
-
-    flex:1;
-    text-align:left;
-
-}
-
-.qr-texto h2{
-
-    color:#331010;
-    font-size:34px;
-    margin-bottom:15px;
-
-}
-
-.qr-texto p{
-
-    font-size:18px;
-    color:#555;
-    line-height:1.7;
-
-}
-
-.qr-imagen{
-
-    width:180px;
-
-}
-
-.qr-imagen img{
-
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-
-}
-
-.btn-menu{
-
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 30px;
-
-    background:#C62828;
-    color:white;
-
     text-decoration:none;
-    border-radius:30px;
+    color:#fff;
+    font-family:'Arial',sans-serif;
     font-weight:bold;
-
-    transition:.3s;
-
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    transition:.35s;
+    z-index:9999;
+    animation:flotar 3s ease-in-out infinite;
 }
 
-.btn-menu:hover{
-
-    background:#331010;
-    transform:translateY(-3px);
-
+.menu-float:hover{
+    transform:scale(1.12);
+    background:linear-gradient(135deg,#FFD54F,#FF9800);
+    color:#331010;
 }
 
+.menu-float .icono{
+    font-size:28px;
+    margin-bottom:3px;
+}
 
+.menu-float .texto{
+    font-size:14px;
+    letter-spacing:1px;
+}
 
+@keyframes flotar{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
 
 /*=============================
         TABLETS
